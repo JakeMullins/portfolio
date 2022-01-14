@@ -25,4 +25,4 @@ jobs:
           remote: /var/www/html
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
-          privateKey: ${{ secrets.KEY }}  
+          password: ${{ secrets.SSH_USER }}
