@@ -29,4 +29,4 @@ jobs:
           local: www
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          privateKey: ${{ secrets.KEY }}
+          privateKey: ${{ secrets.PASSWORD }}
