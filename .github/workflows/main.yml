@@ -1,18 +1,13 @@
-# This is a basic workflow to help you get started with Actions
-
-name: upload-to-server
-
-# Controls when the workflow will run
+name: upload
 on:
-  # Triggers when something in www dir changes
-  push: 
+  # Triggers when something in the www path on the main branch of your repo changes
+  push:
     branches: [ main ]
-    paths: [ 'www/*' ]
+    paths: [ 'www/**' ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,13 +15,14 @@ jobs:
     steps:
       - name: Checkout files
         uses: actions/checkout@v2
-      
-      # Use this marketplace step to copy files over SCP.
-      # Copies everything in www dir to var/www/html in remote server
+
+      # Use this marketplace step to copy files over SCP. 
+      # This copies everything in the www dir of your repo to your /var/www/html directory        
       - name: Copy website files
         uses: garygrossgarten/github-action-scp@release
         with:
           local: www
+          remote: /var/www/html
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          privateKey: ${{ secrets.PASSWORD }}
+          username: ${{ secrets.SSH_USER }}
+          privateKey: ${{ secrets.KEY }}  
