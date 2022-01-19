@@ -4,10 +4,15 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: rgba(17, 45, 168, 66);
     text-align: center;
     border: 4mm ridge #F5004E;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p {
@@ -15,6 +20,19 @@ p {
     font-size: 20px;
 }
 
+a {
+    color: rgba(17, 45, 168, 66);
+}
+
+ul {
+    list-style-type: square;
+    font-size: 20px;
+}
+
 address {
-    border: 2px, black;
+    border: thick double black;
+}
+
+nav {
+    border: thick double #32a1ce;
 }
