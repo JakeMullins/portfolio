@@ -1,13 +1,20 @@
 body {
-    background-color: lightblue;
+    background-color: rgba(245, 175, 12, 96);
+    color: #112DA8;
 }
 
-h1 {
-    color: white;
+h1,
+h2 {
+    color: rgba(17, 45, 168, 66);
     text-align: center;
+    border: 4mm ridge #F5004E;
 }
 
 p {
     font-family: verdana;
     font-size: 20px;
+}
+
+address {
+    border: 2px, black;
 }
