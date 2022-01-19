@@ -1,8 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgba(245, 175, 12, 96);
     color: #112DA8;
     padding: 10px 50px;
-    margin: 20px 0px 50px 10px;
+    margin: 20px 50px;
 }
 
 h1,
@@ -15,13 +21,15 @@ h6 {
     text-align: center;
     border: 4mm ridge #F5004E;
     padding: 10px;
+    margin: 20px 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p {
     font-family: verdana;
     font-size: 20px;
-    padding: 20px 10px;
+    padding: 10px;
+    margin: 20px 50px;
 }
 
 a {
@@ -31,12 +39,29 @@ a {
 ul {
     list-style-type: square;
     font-size: 20px;
+    padding: 10px;
+    margin: 20px 50px;
 }
 
 address {
-    border: thick double black;
+    font-style: italic;
 }
 
 nav {
     border: thick double #32a1ce;
+    padding: 10px;
+    margin: 20px 50px;
+}
+
+h1.header {
+    font-family: 'Century Gothic', 'Effra', 'Quasimoda';
+    font-size: x-large;
+    color: #F5004E;
+}
+
+.test {
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    margin: 20px auto;
 }
