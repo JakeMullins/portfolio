@@ -48,12 +48,16 @@ address {
 }
 
 nav {
-    border: thick double #32a1ce;
-    padding: 10px;
-    margin: 20px 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #F5004E;
 }
 
-h1.header {
+
+/* classes */
+
+.header {
     font-family: 'Century Gothic', 'Effra', 'Quasimoda';
     font-size: x-large;
     color: #F5004E;
@@ -64,4 +68,21 @@ h1.header {
     text-align: center;
     width: 40%;
     margin: 20px auto;
+}
+
+.nav-entry {
+    display: inline;
+    padding: 8px;
+}
+
+
+/* IDS */
+
+#title {
+    border-left: solid 10px #112DA8;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    color: #112DA8;
+    background-color: #F5004E;
 }
