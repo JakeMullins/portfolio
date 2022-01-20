@@ -86,3 +86,7 @@ nav {
     color: #112DA8;
     background-color: #F5004E;
 }
+
+li a:hover {
+    color: #F5004E;
+}
