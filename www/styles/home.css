@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -8,8 +8,8 @@
 body {
     background-color: #F5AF0C;
     color: #112DA8;
-    padding: 10px 50px;
-    margin: 20px 50px;
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 h1,
@@ -21,9 +21,9 @@ h6 {
     color: rgba(17, 45, 168, 66);
     text-align: center;
     border: 4mm ridge #F5004E;
-    padding: 10px;
-    margin: 20px 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px 50px;
+    padding: 10px 50px;
 }
 
 p {
@@ -62,78 +62,8 @@ nav {
     font-family: 'Century Gothic', 'Effra', 'Quasimoda';
     font-size: x-large;
     color: #F5004E;
-}
-
-.menu {
-    height: 100px;
-    background-color: #B2D6FF;
-    /* Medium blue */
-}
-
-.sidebar {
-    height: 300px;
-    background-color: #F09A9D;
-    /* Red */
-}
-
-.content {
-    height: 500px;
-    background-color: #F5CF8E;
-    /* Yellow */
-}
-
-.footer {
-    height: 200px;
-    background-color: #D6E9FE;
-    /* Light blue */
-}
-
-.menu {
-    height: 100px;
-    background-color: #B2D6FF;
-    /* Medium blue */
-}
-
-.sidebar {
-    height: 300px;
-    background-color: #F09A9D;
-    /* Red */
-}
-
-.content {
-    height: 500px;
-    background-color: #F5CF8E;
-    /* Yellow */
-}
-
-.footer {
-    height: 200px;
-    background-color: #D6E9FE;
-    /* Light blue */
-}
-
-.menu {
-    height: 100px;
-    background-color: #B2D6FF;
-    /* Medium blue */
-}
-
-.sidebar {
-    height: 300px;
-    background-color: #F09A9D;
-    /* Red */
-}
-
-.content {
-    height: 500px;
-    background-color: #F5CF8E;
-    /* Yellow */
-}
-
-.footer {
-    height: 200px;
-    background-color: #D6E9FE;
-    /* Light blue */
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 .menu {
@@ -172,6 +102,12 @@ nav {
     padding: 8px;
 }
 
+.ad {
+    background-color: white;
+    width: 200px;
+    height: 400px;
+}
+
 
 /* IDS */
 
@@ -182,6 +118,8 @@ nav {
     border-bottom: none;
     color: #112DA8;
     background-color: #F5004E;
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 li a:hover {
