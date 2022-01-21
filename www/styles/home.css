@@ -29,6 +29,10 @@ p {
     margin: 20px 50px;
 }
 
+hr {
+    border-top: 10px #112DA8;
+}
+
 a {
     color: rgba(17, 45, 168, 66);
 }
