@@ -1,0 +1,141 @@
+a {
+    color: #4F969E;
+}
+
+body {
+    background-color: #EBDC75;
+}
+
+footer {
+    font-size: larger;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    padding: none;
+    margin: 0px;
+    background-color: #EB9DC7;
+    width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+p {
+    padding: 10px;
+    font-size: xx-large;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* Classes */
+
+.content {
+    background-color: #8CE2EB;
+}
+
+.home-button {
+    float: right;
+    padding-top: 0px;
+}
+
+.portfolio {
+    margin: 1.5em auto;
+    max-width: 100%;
+    column-gap: 1.5em;
+}
+
+.image {
+    background: #eee;
+    padding: 1em;
+    margin: 0 0 1.5em;
+}
+
+.image:hover {
+    opacity: 0.9;
+}
+
+.review-description {
+    margin: 10px;
+}
+
+.review-title {
+    margin-top: 30px;
+    border-bottom: 1px solid #4F969E;
+}
+
+.review-picture {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* review container */
+
+.reviews {
+    overflow: hidden;
+    clear: both;
+    border: none;
+}
+
+
+/* INDIVIDUAL review*/
+
+.review {
+    float: left;
+    width: 31%;
+    margin: 20px 1.15%;
+    border: 3px solid black;
+}
+
+@media only screen and (min-width: 1024px) {
+    .portfolio {
+        column-count: 4;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .portfolio {
+        column-count: 3;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+    .portfolio {
+        column-count: 2;
+    }
+}
+
+
+/* Navbar */
+
+.bg-dark {
+    background-color: #7DD3D8 !important;
+}
+
+.bg-primary {
+    background-color: #EBDC75 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #333;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
