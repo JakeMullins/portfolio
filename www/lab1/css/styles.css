@@ -15,7 +15,7 @@ img {
 }
 
 header {
-    padding: none;
+    padding: 0px;
     margin: 0px;
     background-color: #EB9DC7;
     width: 100%;
@@ -38,6 +38,10 @@ p {
 
 
 /* Classes */
+
+.about-page {
+    display: flex;
+}
 
 .content {
     background-color: #8CE2EB;
@@ -138,4 +142,16 @@ p {
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
+}
+
+
+/* ID */
+
+#about-img {
+    width: 15%;
+    float: left;
+}
+
+#about-text {
+    float: right;
 }
