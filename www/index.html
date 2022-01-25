@@ -2,33 +2,60 @@
 <html>
 
 <head>
-    <title>Jake's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles/home.css">
+    <title>Jake Mullins</title>
+    <link rel="stylesheet" type="text/css" href="../styles/home.css">
 </head>
 
 <body>
-    <h1>Jake Mullins' Portfolio</h1>
-    <h2>About Me</h2>
-    <p>Hi! My name is Jake Mullins, and I am studying Computer Science at BYU.</p>
+    <div class="header">
+        <h1 id="title"> Jake Mullins</h1>
+    </div>
+
+    <nav>
+        <ul id="nav-list">
+            <li class="nav-entry"><a href="https://jake-mullins.net/">Home</a></li>
+            <li class="nav-entry"><a href="https://jake-mullins.net/portfolio ">My Portfolio</a></li>
+            <li class="nav-entry"><a href="https://jake-mullins.net/">Projects (dropdown)</a></li>
+            <li class="nav-entry"><a href="https://jake-mullins.net/contact">Contact</a></li>
+            <li class="nav-entry"><a href="https://jake-mullins.net/resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <p>Hi! My name is Jake Mullins, and I am studying Computer Science and Arabic at BYU.</p>
 
     <h1>Projects</h1>
-    <ul>
-        <li>Exoplanet Counter using Node.js and MongoDB</li>
-        <li>Seinfeld Script Webscraper using BeautifulSoup4</li>
-        <li>Arduino Greenhouse Control</li>
-    </ul>
+    <div class='projects'>
+        <div class='project'>
+            <img src="../images/Placeholder.png" class="project-picture">
+            <h3 class="project-title">Exoplanet Counter</h3>
+            <p class="project-description">A node.js program that gets the number of discovered exoplanets from NASA using Node.js and MongoDB</p>
+        </div>
+        <div class='project'>
+            <img src="../images/Placeholder.png" class="project-picture">
+            <h3 class="project-title">Seinfeld Script Scraper</h3>
+            <p class="project-description">A python project running on Django that can get the scripts of every Seinfeld Episode. Part of a larger in progress project to generate Seinfeld scripts.</p>
+        </div>
+        <div class='project'>
+            <img src="../images/Placeholder.png" class="project-picture">
+            <h3 class="project-title">Arduino Greenhouse Control</h3>
+            <p class="project-description">This one hasn't happened. Yet.</p>
+        </div>
+    </div>
 
     <h1>Work Experience</h1>
     <p>Absolutely nothing technology related</p>
     <p>Which is probably a good thing, since I'm only 18. I don't want to be the spoiled kid who was able to score an internship at his dad's tech company.</p>
 
-    <hr>
-    <img source="https://fsmedia.imgix.net/d7/c4/7d/30/bb49/4dd1/bd48/88338dfc87a3/pepe-the-frog-2png.png?rect=0,0,1263,946&dpr=2&auto=format,compress&q=75">
-    <hr>
-    <h2>Contact</h2>
-    <p>You can reach me with my phone number: 425-499-4497<br> or my email: jmullins2003@outlook.com</p>
-
-
+    <address>
+        <h2>Contact</h2>
+        <p>You can reach me with my phone number: 425-499-4497<br> or my email: jmullins2003@outlook.com</p>
+    </address>
+    <div class="test">
+        <h1>A Title</h1>
+        <p>A paragraph with a whole bunch of text and also my name is Jake Mullins</p>
+    </div>
 </body>
 
 </html>
