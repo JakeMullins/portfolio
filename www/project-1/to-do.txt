@@ -1,0 +1,12 @@
+Stage 1:
+HTML/CSS
+Images 
+Bootstrap menu
+Pretty
+Optional: Responsive Design
+
+Stage 2:
+Home page
+3+ additional pages
+Images 
+Bootstrap menu
