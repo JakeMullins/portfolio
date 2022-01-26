@@ -10,3 +10,14 @@ Home page
 3+ additional pages
 Images 
 Bootstrap menu
+
+Dark green
+#74A371
+Light green
+#9FF099
+Salmon
+#F09A8E
+Dark Blue
+#509DA3
+Light Blue
+#81E8F0
