@@ -1,17 +1,56 @@
 * {
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Tags */
+
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #81E8F0;
+    background-color: #C9EDCC;
 }
 
-header {
-    background-color: #F09A8E;
+
+/* Classes */
+
+.content-container {
+    font-size: xx-large;
+    text-align: center;
 }
 
-content {
-    background-color: #9FF099;
+.copyright-date-container {}
+
+.github-container {}
+
+.logo-container {}
+
+.main-container {
+    justify-content: center;
 }
 
-footer {
-    background-color: #F09A8E;
+.navbar-container {
+    text-align: left;
+    border-right: .5em solid #F59EA4;
+    border-top: .5em solid #F59EA4;
+    border-bottom: .5em solid #F59EA4;
+}
+
+
+/* Rows */
+
+.header-row {
+    justify-content: space-around;
+    display: flex;
+}
+
+.content-row {
+    justify-content: flex-start;
+    display: flex;
+}
+
+.footer-row {
+    justify-content: right;
+    display: flex;
 }

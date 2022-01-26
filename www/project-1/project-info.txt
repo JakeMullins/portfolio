@@ -11,13 +11,16 @@ Home page
 Images 
 Bootstrap menu
 
+To do:
+    
+
 Dark green
 #74A371
 Light green
-#9FF099
+#C9EDCC
 Salmon
-#F09A8E
+#F0BDB5
 Dark Blue
-#509DA3
+#F59EA4
 Light Blue
-#81E8F0
+#BAEEF3
