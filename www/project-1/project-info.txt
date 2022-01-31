@@ -12,6 +12,7 @@ Images
 Bootstrap menu
 
 To do:
+Boxes on like page 10 of notebook - <3 Ollie
 
 Dark green
 #74A371

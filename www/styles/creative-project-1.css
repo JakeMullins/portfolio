@@ -8,16 +8,31 @@
 /* Tags */
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #C9EDCC;
+    font-family: 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #BAEEF3;
 }
 
 
 /* Classes */
 
-.blank-container {
-    border: 2px solid red;
-    width: 15vw;
+.blank-content-container {
+    max-width: 17vw;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form-container {
+    border: 1px solid black;
+    background-color: white;
+    color: red;
+}
+
+.contact-info-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .content-container {
@@ -27,17 +42,34 @@ body {
     margin-right: 15vh;
     margin-left: 15vh;
     padding-top: 4vh;
-    border: 2px solid red;
+    width: 70vw;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .copyright-date-container {}
 
+.email-phone-container {
+    justify-content: center;
+}
+
 .github-container {}
 
-.logo-container {}
+.github-logo {
+    max-width: 3vw;
+    padding-bottom: 10vh
+}
+
+.logo-container {
+    display: flex;
+}
 
 .main-container {
     justify-content: center;
+}
+
+.menu-icon {
+    max-width: 2vw;
 }
 
 .nav-entry {
@@ -45,15 +77,28 @@ body {
 }
 
 .navbar-container {
-    background-color: #BAEEF3;
+    background-color: #F0BDB5;
     text-align: left;
     border-right: .5em solid #F59EA4;
     border-top: .5em solid #F59EA4;
     border-bottom: .5em solid #F59EA4;
     font-size: x-large;
-    width: 15vw;
+    max-width: 17vw;
     align-items: stretch;
-    border: 2px solid red;
+}
+
+.site-logo {
+    max-width: 4vw;
+    align-items: center;
+}
+
+.site-name-container {
+    margin-top: 0.5vh;
+    margin-left: 1vh;
+}
+
+.site-name-description {
+    color: #808080;
 }
 
 
@@ -62,7 +107,7 @@ body {
 .header-row {
     justify-content: space-between;
     display: flex;
-    margin: 4vh;
+    margin: 4vh 4vh 4vh 4vh;
     height: 3vh;
 }
 
@@ -71,7 +116,6 @@ body {
     display: flex;
     height: 80vh;
     align-items: center;
-    border: 2px solid red;
 }
 
 .footer-row {
