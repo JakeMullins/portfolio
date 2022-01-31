@@ -12,8 +12,10 @@ Images
 Bootstrap menu
 
 To do:
-Boxes on like page 10 of notebook - <3 Ollie
-
+- Boxes on like page 10 of notebook - <3 Ollie
+- links to Projects in project title 
+    <a href="..."><h4>Exoplanet Counter</h4></a>
+- Better list format
 Dark green
 #74A371
 Light Green

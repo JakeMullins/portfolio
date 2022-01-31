@@ -57,7 +57,6 @@ body {
 
 .github-logo {
     max-width: 3vw;
-    padding-bottom: 10vh
 }
 
 .logo-container {
@@ -86,6 +85,28 @@ body {
     max-width: 17vw;
     align-items: stretch;
 }
+
+
+/* Project page class */
+
+.projects-container {
+    justify-content: left;
+}
+
+.project-copy-info {
+    width: 100vw;
+}
+
+.project-tech-info {
+    list-style: inside;
+    width: 60vw;
+}
+
+.big-left-row {
+    display: flex;
+}
+
+.big-right-row {}
 
 .site-logo {
     max-width: 4vw;
@@ -121,5 +142,4 @@ body {
 .footer-row {
     justify-content: space-between;
     display: flex;
-    margin: 2vh;
 }
