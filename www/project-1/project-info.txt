@@ -12,7 +12,6 @@ Images
 Bootstrap menu
 
 To do:
-    
 
 Dark green
 #74A371
