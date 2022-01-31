@@ -49,6 +49,12 @@ body {
 
 .copyright-date-container {}
 
+.download-icon {
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+    margin-left: 1vw;
+}
+
 .email-phone-container {
     justify-content: center;
 }
@@ -120,6 +126,17 @@ body {
 
 .site-name-description {
     color: #808080;
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+}
+
+.resume-row {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
 }
 
 
