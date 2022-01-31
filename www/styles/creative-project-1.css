@@ -15,9 +15,19 @@ body {
 
 /* Classes */
 
+.blank-container {
+    border: 2px solid red;
+    width: 15vw;
+}
+
 .content-container {
     font-size: xx-large;
     text-align: center;
+    margin-bottom: 10vh;
+    margin-right: 15vh;
+    margin-left: 15vh;
+    padding-top: 4vh;
+    border: 2px solid red;
 }
 
 .copyright-date-container {}
@@ -30,27 +40,42 @@ body {
     justify-content: center;
 }
 
+.nav-entry {
+    margin: 1vh;
+}
+
 .navbar-container {
+    background-color: #BAEEF3;
     text-align: left;
     border-right: .5em solid #F59EA4;
     border-top: .5em solid #F59EA4;
     border-bottom: .5em solid #F59EA4;
+    font-size: x-large;
+    width: 15vw;
+    align-items: stretch;
+    border: 2px solid red;
 }
 
 
 /* Rows */
 
 .header-row {
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
+    margin: 4vh;
+    height: 3vh;
 }
 
 .content-row {
     justify-content: flex-start;
     display: flex;
+    height: 80vh;
+    align-items: center;
+    border: 2px solid red;
 }
 
 .footer-row {
-    justify-content: right;
+    justify-content: space-between;
     display: flex;
+    margin: 2vh;
 }
