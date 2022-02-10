@@ -58,6 +58,18 @@ nav {
 
 /* classes */
 
+.content {
+    height: 500px;
+    background-color: #F5CF8E;
+    /* Yellow */
+}
+
+.footer {
+    height: 200px;
+    background-color: #D6E9FE;
+    /* Light blue */
+}
+
 .header {
     font-family: 'Century Gothic', 'Effra', 'Quasimoda';
     font-size: xx-large;
@@ -76,22 +88,9 @@ nav {
     /* Medium blue */
 }
 
-.sidebar {
-    height: 300px;
-    background-color: #F09A9D;
-    /* Red */
-}
-
-.content {
-    height: 500px;
-    background-color: #F5CF8E;
-    /* Yellow */
-}
-
-.footer {
-    height: 200px;
-    background-color: #D6E9FE;
-    /* Light blue */
+.mountains-entry {
+    padding: 2vh 1.5vw;
+    border: 1px solid #112DA8;
 }
 
 .test {
@@ -149,6 +148,10 @@ nav {
 
 
 /* IDS */
+
+#mountains {
+    margin: 20px 50px;
+}
 
 #title {
     border: none;
