@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        Enter a city in Utah: <input type="text" id="cityField" value=""> <br> Suggestion: <span id="txtHint">Empty</span>
+        <input id="weatherButton" type="submit" value="Submit">
+    </form>
+    <p>City</p>
+    <textarea id="displayCity">No City</textarea>
+    <p>Current Weather</p>
+    <div id="weather">No weather</div>
+    <br>
+    <div id="rickAndMorty">
+        <input id="rickAndMortyButton" type="submit" value="Click if you are a degenerate">
+        <p id="rickAndMortyInfo"></p>
+    </div>
+</body>
+
+<script>
+    document.getElementById("rickAndMortyButton").addEventListener("click", () => {
+        const charactersUrl = "https://rickandmortyapi.com/api/character";
+        const locationsUrl = "https://rickandmortyapi.com/api/location";
+
+        fetch(charactersUrl)
+            .then((response) => {
+                console.log(response);
+                return response.json();
+            })
+            .then((json) => {
+                console.log(json)
+            })
+    })
+
+    document.getElementById("cityField").addEventListener("keyup", function(event) {
+        event.preventDefault();
+        const url = "http://bioresearch.byu.edu/cs260/jquery/getcity.cgi?q=" + document.getElementById("cityField").value;
+        fetch(url)
+            .then(function(response) {
+                return response.json();
+            }).then(function(json) {
+                console.log(json);
+                console.log(json[0]);
+                console.log("Got " + json[0].city);
+                var everything;
+                everything = "<ul>";
+                for (let i = 0; i < json.length; i++) {
+                    everything += "<li> " + json[i].city;
+                };
+                everything += "</ul>";
+                document.getElementById("txtHint").innerHTML = everything;
+            });
+    });
+</script>
+
+</html>
