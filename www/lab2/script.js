@@ -6,9 +6,9 @@ document.getElementById("weatherSubmit").addEventListener("click", (event) => {
         return;
     }
 
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial&APPID=b545ceab5f400c3f066fb28c8c7bbaef";
+    const url1 = "https://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial&APPID=b545ceab5f400c3f066fb28c8c7bbaef";
 
-    fetch(url)
+    fetch(url1)
         .then((response) => {
             return response.json();
         })
@@ -29,5 +29,20 @@ document.getElementById("weatherSubmit").addEventListener("click", (event) => {
             }
             results += "</p>";
             document.getElementById("weatherResults").innerHTML = results;
+        })
+
+    const url2 = "http://api.openweathermap.org/data/2.5/forecast?q=" + value + ",US&units=imperial&APPID=b545ceab5f400c3f066fb28c8c7bbaef";
+    fetch(url2)
+        .then((response) => {
+            return response.json();
+        })
+        .then((json) => {
+            let forecast = "";
+            for (let i = 0; i < json.list.length; i++) {
+                forecast += "<h2>" + moment(json.list[i].dt_txt).format('MMMM Do YYYY, h:mm:ss a') + "</h2>";
+                forecast += "<p>Temperature: " + json.list[i].main.temp + "</p>";
+                forecast += '<img src="http://openweathermap.org/img/w/' + json.list[i].weather[0].icon + '.png"/>'
+            }
+            document.getElementById("forecastResults").innerHTML = forecast;
         })
 });
