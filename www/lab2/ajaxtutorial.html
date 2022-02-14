@@ -18,6 +18,13 @@
         <input id="rickAndMortyButton" type="submit" value="Click if you are a degenerate">
         <p id="rickAndMortyInfo"></p>
     </div>
+
+    <div id="github">
+        <form>
+            Enter your Github username: <input type="text" id="githubField" value=""> <br>
+            <input id="githubButton" type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 <script>
@@ -42,7 +49,6 @@
                     })
             })
     })
-
     document.getElementById("cityField").addEventListener("keyup", function(event) {
         event.preventDefault();
         const url = "http://bioresearch.byu.edu/cs260/jquery/getcity.cgi?q=" + document.getElementById("cityField").value;
@@ -62,6 +68,10 @@
                 document.getElementById("txtHint").innerHTML = everything;
             });
     });
+    document.getElementById("githubButton").addEventListener("click", () => {
+        event.preventDefault();
+        var id = document.getElementById("githubField").value;
+    })
 </script>
 
 </html>

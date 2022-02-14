@@ -6,6 +6,10 @@ This is a portfolio site to prove that I know how to use git CLI and github acti
 Note to smoothbrain
     - put everything in dir www
 
+TODO
+Update resumes
+Make colors prettier (talk to art nerds)
+
 color pallete
 #A87708 168 120 8 66 
 #F5AE0C 245 175 12 95
