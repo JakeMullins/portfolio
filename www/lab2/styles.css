@@ -1,0 +1,29 @@
+#weatherDataEntry {
+    margin: 0%;
+}
+
+#currDay {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+#currDayBigTemp {
+    font-size: 8vh;
+}
+
+#currDayPicture {
+    display: flex;
+    vertical-align: middle;
+}
+
+#currDayTable {
+    font-size: 3vh;
+    align-content: flex-end;
+}
+
+#location {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
