@@ -132,17 +132,17 @@ document.getElementById("generateLessonButton").addEventListener("click", (event
     generateLessons();
 })
 
+// Add
 
-document.getElementById("lessonSelectDropdown").onchange = () => {
-    lessonIndex = document.getElementById("lessonSelectDropdown").value;
-    lessonText = lessons[lessonIndex].lessonText;
-    renderLesson(lessonText);
-}
+document.getElementById("lessonSelectDropdown").addEventListener("change", () => {
+    lessonTextField = document.getElementById("lesson-text");
+    lessonValue = document.getElementById("lessonSelectDropdown").value;
+    
+    renderLesson(lessons[lessonValue].lessonText);
+})
 
-// Tokenize then output lesson
+// Outputs div w/ class word for each word
 function renderLesson(lessonText) {
-    tokens = lessonText.split(' ');
-    tokens.forEach((value) => {
-        console.log(value);
-    })
+    let lessonWords = lessons[lessonValue].lessonText.split(/[ \n]/);
+
 }

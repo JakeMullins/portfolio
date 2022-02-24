@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#lesson {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:xx-large;
+}
+
+#lesson-text {
+    font-size:xxx-large;
+    width:60vw;
+    text-align:right;
+    min-height:10vh;
+}
+
+#input-field {
+    font-size:xxx-large;
+    width:60vw;
+    text-align:right;
+    height:30vh;
+}
