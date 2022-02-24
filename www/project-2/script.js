@@ -145,4 +145,10 @@ document.getElementById("lessonSelectDropdown").addEventListener("change", () =>
 function renderLesson(lessonText) {
     let lessonWords = lessons[lessonValue].lessonText.split(/[ \n]/);
 
+    lessonTextField = document.getElementById("lesson-text");
+    lessonWords.forEach((word) => {
+        // Decide structure for each word.
+        // 3 states grey green red
+        lessonTextField.innerHTML += '<div class="empty-word">' + word + "</div>";
+    })
 }

@@ -6,13 +6,13 @@
 }
 
 #lesson {
-    display:flex;
     flex-direction: column;
     align-items: center;
     font-size:xx-large;
 }
 
 #lesson-text {
+display: flex;
     font-size:xxx-large;
     width:60vw;
     text-align:right;
