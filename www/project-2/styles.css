@@ -6,17 +6,20 @@
 }
 
 #lesson {
-    flex-direction: column;
-    align-items: center;
+    text-align:center;
     font-size:xx-large;
+    justify-content:center;
+    align-items: center;
 }
 
 #lesson-text {
-display: flex;
-    font-size:xxx-large;
-    width:60vw;
-    text-align:right;
-    min-height:10vh;
+    font-size: xxx-large;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    max-width: 30vw;
+    justify-content:right;
+    align-items: right;
 }
 
 #input-field {

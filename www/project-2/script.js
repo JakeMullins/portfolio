@@ -128,11 +128,23 @@ function generateLessonMenu() {
     return html;
 }
 
+document.getElementById("generateQuote").addEventListener("click", (event) => {
+    const url = "https://quranapi.azurewebsites.net/api/verse/"
+    let quranSection = document.getElementById("quranText")
+    fetch(url)
+        .then((response) => {
+            return response.json();
+        })
+        .then((json) => {
+            quranSection.innerHTML = json.Text;
+        })
+    quranSection.innerHTML = "Loading verse";
+})
+
 document.getElementById("generateLessonButton").addEventListener("click", (event) => {
     generateLessons();
 })
 
-// Add
 
 document.getElementById("lessonSelectDropdown").addEventListener("change", () => {
     lessonTextField = document.getElementById("lesson-text");
@@ -146,6 +158,7 @@ function renderLesson(lessonText) {
     let lessonWords = lessons[lessonValue].lessonText.split(/[ \n]/);
 
     lessonTextField = document.getElementById("lesson-text");
+    lessonTextField.innerHTML = "";
     lessonWords.forEach((word) => {
         // Decide structure for each word.
         // 3 states grey green red
