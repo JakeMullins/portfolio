@@ -12,7 +12,7 @@
           <button type="submit">Add</button>
       </form>
       <ul>
-        <li v-for="item in todos">
+        <li v-for="item in todos" draggable="true" :dragstart="dragItem(item)" :dragover.prevent :drop="dropItem(item">
             <input type="checkbox" v-model="item.completed"/>
             <label v-bind:class="{ completed: item.completed }">{{ item.text }}</label>
             <button v-on:click="deleteItem(item)" class="delete">X</button>
