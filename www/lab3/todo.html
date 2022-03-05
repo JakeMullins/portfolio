@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>A List of Things To Do</h1>
+      <p v-show="activeTodos.length === 0">You are done with your jit</p> 
+      <form v-on:submit.prevent="addItem">
+          <input type="text" v-model="message">
+          <button type="submit">Add</button>
+      </form>
+      <ul>
+        <li v-for="item in todos">
+            <input type="checkbox" v-model="item.completed"/>
+            <label v-bind:class="{ completed: item.completed }">{{ item.text }}</label>
+            <button v-on:click="deleteItem(item)" class="delete">X</button>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../lab3/todoscript.js"></script>
+</html>
