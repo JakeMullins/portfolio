@@ -18,6 +18,7 @@
   "homepage": "https://github.com/JakeMullins/portfolio#readme",
   "dependencies": {
     "moment": "^2.29.1",
-    "vue": "^3.2.31"
+    "vue": "^3.2.31",
+    "vue-star-rating": "^1.7.0"
   }
 }

@@ -1,3 +1,4 @@
+Vue.component('star-rating', VueStarRating.default);
 let app = new Vue({
     el: '#app',
     data: {
@@ -5,6 +6,7 @@ let app = new Vue({
     addedName: '',
     addedComment: '',
     comments: {},
+    ratings: {},
       number: '',
       max: '',
       current: {
@@ -55,6 +57,8 @@ let app = new Vue({
             this.number = this.getRandom(1, this.max);
         },
         addComment() {
+            var moment = require('moment');
+            
             if(!(this.number in this.comments)){
                 Vue.set(app.comments, this.number, new Array);
             }
@@ -66,6 +70,18 @@ let app = new Vue({
             this.addedTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 
             console.log(this.comments);
+        },
+        setRating(rating) {
+            // Check if object has a rating
+            if(!(this.number in this.ratings)){
+                Vue.set(this.ratings, this.number, {
+                    sum: 0,
+                    total:0
+                });
+            }
+            this.ratings[this.number].sum += rating;
+            this.ratings[this.number].total += 1;
+
         }
     },
     computed: {
@@ -102,4 +118,4 @@ let app = new Vue({
             }
         }
     }
-  });
+  })
