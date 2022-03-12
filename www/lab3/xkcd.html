@@ -26,7 +26,6 @@
                   <br />
                   <button type="submit">Comment</button>
                 </form>
-                <star-rating @rating-selected="setRating"></star-rating>
                 <h3>Comments</h3>
                 <div v-for="comment in comments[number]">
                   <hr>
@@ -39,6 +38,5 @@
     </body>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../lab3/xkcd.js"></script>
-    <script src="https://unpkg.com/vue-star-rating/dist/VueStarRating.umd.min.js"></script>    
+    <script src="../lab3/xkcd.js"></script> 
     </html>
